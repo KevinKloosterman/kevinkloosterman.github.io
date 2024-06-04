@@ -1,0 +1,268 @@
+{
+    "personal": {
+        "first_name": "Kevin",
+        "last_name": "Kloosterman",
+        "title": "Technical Web Analyst",
+        "photo": "profile.jpeg",
+        "quote": "",
+        "introduction": "",
+        "contact": {
+            "email": "kevin.kloosterman@hotmail.com",
+            "socials": {
+                "linkedin": {
+                    "logo": "linkedin.png",
+                    "url": "https://www.linkedin.com/in/kevinkloosterman/"
+                },
+                "github": {
+                    "logo": "github.png",
+                    "url": "https://www.github.com/kevinkloosterman/"
+                }
+            }
+        }
+    },
+    "experience": [
+        {
+            "employer_id": "03",
+            "employer": "Netprofiler",
+            "note": "Part of LevelUp Group",
+            "title": "SEA & Data Consultant",
+            "period": {
+                "start": "January 2023",
+                "end": "present"
+            },
+            "description": "When I started at Netprofiler, I was responsible for both our clients paid search performance and their data collection. Due to my passion for data and analytics, this role shifted to a more data oriented one. While primarily being a Technical Web Analyst, I also put in a fair share of data engineering and visualization.",
+            "url": "https://www.netprofiler.nl",
+            "logo": "netprofiler_square.png",
+            "relevant_skills": {
+                "fields": {
+                    "Data Collection": "",
+                    "SEA": "",
+                    "Data Analytics": "",
+                    "Data Visualization": "",
+                    "Data Science": "",
+                    "Data Engineering": ""
+                },
+                "tools": {
+                    "Google Tag Manager": "",
+                    "Google Analytics 4": "",
+                    "Google Looker Studio": "",
+                    "Google Cloud Console": "",
+                    "Google Apps Script": "",
+                    "Google Ads": ""
+                },
+                "programming": {
+                    "Python": "",
+                    "JavaScript": ""
+                }
+            }
+        },
+        {
+            "employer_id": "02",
+            "employer": "Cadform",
+            "note": "",
+            "title": "Digital Marketeer",
+            "period": {
+                "start": "February 2021",
+                "end": "December 2022"
+            },
+            "description": "After my internship at Cadform, I continued working there. In my new role, I managed various marketing tools for both B2C and B2B clients. For example, I worked on data (collection, analysis, activation), advertising campaigns, CRO, SEO, and email marketing.",
+            "url": "https://www.cadform.nl/",
+            "logo": "cadform.png",
+            "relevant_skills": {
+                "fields": {
+                    "SEA": "",
+                    "Data Analytics": "",
+                    "Data Collection": "",
+                    "Data Visualization": "",
+                    "Social Media": "",
+                    "SEO": "",
+                    "E-mail": "",
+                    "CRO": ""
+                },
+                "tools": {
+                    "Google Tag Manager": "",
+                    "Google Ads": "",
+                    "Google Universal Analytics": "",
+                    "Google Analytics 4": "",
+                    "Google Looker Studio": "",
+                    "Google Search Console": "",
+                    "Meta Ads": ""
+                },
+                "programming": {
+                    "HTML": "",
+                    "JavaScript": ""
+                }
+            }
+        },
+        {
+            "employer_id": "02",
+            "employer": "Cadform",
+            "note": "",
+            "title": "Intern",
+            "period": {
+                "start": "September 2020",
+                "end": "February 2021"
+            },
+            "description": "As an intern at Cadform, I carried out various tasks. I managed SEA campaigns and delved into CRO and data. I also did video editing in Premiere Pro.",
+            "url": "https://www.cadform.nl/",
+            "logo": "cadform.png",
+            "relevant_skills": {
+                "fields": {
+                    "SEA": "",
+                    "Data Analytics": "",
+                    "Data Collection": "",
+                    "CRO": ""
+                },
+                "tools": {
+                    "Google Tag Manager": "",
+                    "Google Universal Analytics": "",
+                    "Google Ads": "",
+                    "Premiere Pro": ""
+                }
+            }
+        },
+        {
+            "employer_id": "01",
+            "employer": "NRC Live",
+            "note": "This department no longer exists.",
+            "title": "Intern",
+            "period": {
+                "start": "November 2018",
+                "end": "February 2019"
+            },
+            "description": "During my internship at NRC Live, I focused on researching the target audience for various events.",
+            "url": "https://www.nrc.nl/",
+            "logo": "nrc.png",
+            "relevant_skills": {
+                "fields": {
+                    "Event Coordination": "",
+                    "Digital Marketing": "",
+                    "Data Analytics": ""
+                },
+                "tools": {
+                    "Google Universal Analytics": "",
+                    "Facebook Ads": ""
+                }
+            }
+        }
+    ],
+    "education": [
+        {
+            "education_id": "01",
+            "institute": "Hogeschool van Amsterdam",
+            "level": "HBO - Bachelor",
+            "course": "Media, Information, and Communication",
+            "url": "https://www.hva.nl/opleidingen/creative-business",
+            "logo": "hva.png",
+            "period": {
+                "start": "August 2017",
+                "end": "July 2021"
+            },
+            "thesis": {
+                "title": "To what extent should De Consumentenbond inform and advise consumers about neuromarketing within e-commerce platforms to contribute to its ethical correctness?",
+                "grade": "8/10"
+            },
+            "minors": [
+                {
+                    "title": "Neuromarketing",
+                    "grade": "8/10",
+                    "description": "Specialization in CRO to influence subconscious consumer decisions.",
+                    "url": "https://www.kiesopmaat.nl/modules/hva/FBE/140228/"
+                },
+                {
+                    "title": "Digital Marketing",
+                    "grade": "7/10",
+                    "description": "Specialization in marketing strategy, social media, and SEO.",
+                    "url": "https://www.kiesopmaat.nl/modules/hva/FBE/140222/"
+                }
+            ]
+        }
+    ],
+    "skills": {
+        "linguistic": {
+            "Dutch": 100,
+            "English": 99,
+            "Italian": 68,
+            "French": 53,
+            "Spanish": 53,
+            "German": 39,
+            "Japanese": 8
+        },
+        "tools": [
+            {
+                "skill_id": "01",
+                "tool": "Google Tag Manager",
+                "level": 95,
+                "description": "Expert in utilizing Google Tag Manager for efficient tag implementation and management. Proven ability to streamline tracking and analytics setup for advanced marketing insights."
+            },
+            {
+                "skill_id": "02",
+                "tool": "Google Looker Studio",
+                "level": 93,
+                "description": "Expert in using Google Looker Studio for advanced data visualization and reporting. Capable of transforming complex datasets into interactive and actionable business insights."
+            },
+            {
+                "skill_id": "03",
+                "tool": "Google Analytics 4",
+                "level": 90,
+                "description": "Highly skilled in setting up and analyzing data with Google Analytics 4. Expertise in creating insightful reports and (explore) reports to drive data-driven decisions."
+            },
+            {
+                "skill_id": "04",
+                "tool": "Visual Studio Code",
+                "level": 90,
+                "description": "Proficient in using Visual Studio Code for diverse development tasks, including coding, debugging, and version control integration."
+            },
+            {
+                "skill_id": "05",
+                "tool": "Github",
+                "level": 85,
+                "description": "Proficient in using GitHub for version control and collaborative development. Experienced in managing repositories, handling pull requests, and maintaining code integrity through effective branching strategies."
+            },
+            {
+                "skill_id": "06",
+                "tool": "Google Apps Scripts",
+                "level": 83,
+                "description": "Skilled in developing custom Google Apps Scripts to automate and enhance workflows within Google Workspace. Experience in scripting complex automation solutions for improved productivity."
+            },
+            {
+                "skill_id": "07",
+                "tool": "Google Cloud Console",
+                "level": 80,
+                "description": "Competent in managing and deploying applications on Google Cloud Console. Experienced in configuring cloud services and monitoring resources for optimal performance and cost-efficiency."
+            }
+        ],
+        "programming": [
+            {
+                "skill_id": "08",
+                "language": "Python",
+                "level": 88,
+                "description": "Proficient in Python programming for various applications, including web development, data analysis, and automation. Strong understanding of Python libraries and frameworks to build efficient solutions."
+            },
+            {
+                "skill_id": "09",
+                "language": "JavaScript",
+                "level": 81,
+                "description": "Competent in writing JavaScript for dynamic web applications. Familiar with modern JavaScript frameworks and libraries to enhance front-end functionality."
+            },
+            {
+                "skill_id": "10",
+                "language": "HTML",
+                "level": 70,
+                "description": "Proficient in writing and structuring HTML for creating well-organized web pages. Capable of implementing semantic markup and ensuring accessibility."
+            },
+            {
+                "skill_id": "11",
+                "language": "SQL",
+                "level": 70,
+                "description": "Adept at writing SQL queries to manage and manipulate databases. Capable of performing complex joins, subqueries, and data transformations for accurate data retrieval."
+            },
+            {
+                "skill_id": "12",
+                "language": "CSS",
+                "level": 65,
+                "description": "Skilled in styling web pages using CSS. Experience in creating responsive designs and utilizing CSS frameworks to enhance user interfaces."
+            }
+        ]
+    }
+}
