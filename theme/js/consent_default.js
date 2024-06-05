@@ -14,6 +14,3 @@ gtag('consent', 'default', {
   'ad_personalization': 'denied',
   'ad_user_data': 'denied'
 });
-
-// Generic pageview event (not page_view to prevent History Change classification)
-window.dataLayer.push({event: 'pageview'});

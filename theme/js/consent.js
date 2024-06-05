@@ -129,3 +129,6 @@ if (!consentCookieExists()) {
 
 // Always fire consentUpdate to overwrite default with potentially available consent
 consentUpdate();
+
+// Generic pageview event (not page_view to prevent History Change classification)
+window.dataLayer.push({event: 'pageview'});
