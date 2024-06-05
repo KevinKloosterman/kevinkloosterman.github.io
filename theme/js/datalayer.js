@@ -55,4 +55,34 @@ function placeDataLayerListeners() {
             });
         });
     });
+
+    // When user submits the contact form
+    document.querySelector('#contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting immediately
+
+        // Get the email and phone inputs
+        const emailInput = document.querySelector('#email').value;
+        const phoneInput = document.querySelector('#phone').value;
+
+        // Hash the email and phone inputs
+        const shaObj = new jsSHA("SHA-256", "TEXT");
+        shaObj.update(emailInput);
+        const hashedEmail = shaObj.getHash("HEX");
+
+        shaObj.update(phoneInput);
+        const hashedPhone = shaObj.getHash("HEX");
+
+        // Push to dataLayer
+        pushToDataLayer({
+            event: 'form_submit',
+            form_type: 'contact',
+            ec_data: {
+                email: hashedEmail,
+                phone: hashedPhone
+            }
+        });
+
+        // Submit the form after pushing to dataLayer
+        event.target.submit();
+    });
 }
