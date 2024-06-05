@@ -39,7 +39,7 @@ function placeDataLayerListeners() {
             pushToDataLayer({
                 event: 'clickout',
                 clickout_type: 'education',
-                employer: link.dataset.institute.toLowerCase()
+                institute: link.dataset.institute.toLowerCase()
             });
         });
     });
