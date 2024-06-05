@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
             window.scrollTo(0, 0);
         })
         .catch(error => console.error('Error loading navbar:', error));
+    fetch('templates/consent_banner.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('consent-banner-placeholder').innerHTML = data;
+        })
+        .catch(error => console.error('Error loading consent banner:', error));
 });
 
 // Set active nav link color
