@@ -75,17 +75,19 @@ function placeDataLayerListeners() {
             const emailInput = document.querySelector('#email').value;
             const phoneInput = document.querySelector('#phone').value;
     
-            // Hash the email and phone inputs
-            const shaObj = new jsSHA("SHA-256", "TEXT");
-            shaObj.update(emailInput);
-            const hashedEmail = shaObj.getHash("HEX");
-    
-            shaObj.update(phoneInput);
-            const hashedPhone = shaObj.getHash("HEX");
-    
+            // Hash the email input
+            const shaEmail = new jsSHA("SHA-256", "TEXT");
+            shaEmail.update(emailInput);
+            const hashedEmail = shaEmail.getHash("HEX");
+
+            // Hash the phone input
+            const shaPhone = new jsSHA("SHA-256", "TEXT");
+            shaPhone.update(phoneInput);
+            const hashedPhone = shaPhone.getHash("HEX");
+
             // Push to dataLayer
             pushToDataLayer({
-                event: 'form_submit',
+                event: 'ce_form_submit',
                 form_type: 'contact',
                 ec_data: {
                     email: hashedEmail,
