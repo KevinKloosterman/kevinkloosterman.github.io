@@ -11,6 +11,16 @@ function placeDataLayerListeners() {
     // hover_skill: when user hovers skill
     // -> handled in scripts.js hoverSkill function
 
+    // When user clicks download button
+    document.querySelectorAll('a.download-cv').forEach(function(element) {
+        element.addEventListener('click', function(event) {
+            pushToDataLayer({
+                event: 'download_cv',
+                file_language: 'nl',
+            });
+        });
+    });
+
     // When user clicks on a social media link
     document.querySelectorAll('.social-btn').forEach(link => {
         link.addEventListener('click', function() {

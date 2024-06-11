@@ -1,9 +1,9 @@
 :root {
-    --color-background: #F0F4F8;
+    --color-background: #F5F5F5;
     --color-primary: #212934;
     --color-secondary: #3498DB;
     --color-text: #2E2E2E;
-    --color-text-light: #F0F4F8;
+    --color-text-light: #F5F5F5;
     --color-accent: #E74C3C;
     --color-green: #A3C586;
     --color-skill-fields: var(--color-primary);
@@ -88,6 +88,22 @@ h3 {
 
 .list-inline-item {
     margin-right: 10px;
+}
+
+.download {
+    display: block;
+    width: 150px;
+    border-radius: 15px;
+    background-color: var(--color-accent);
+    color: var(--color-text-light);
+    border: none;
+    padding: .4rem;
+    text-align: center;
+}
+
+.button-wrapper:hover, .button-wrapper:visited, .button-wrapper:link, .button-wrapper:active {
+    text-decoration: none;
+    color: var(--color-text-light)
 }
 
 .container {
