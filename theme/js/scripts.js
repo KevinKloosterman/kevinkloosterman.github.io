@@ -26,6 +26,6 @@ function setActiveNavLink() {
     });
 }
 
-if (!(document.location.href.includes("index.html"))) {
+if (window.location.pathname !== '/') {
     placeDataLayerListeners();
 }
