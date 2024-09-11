@@ -92,8 +92,9 @@ h3 {
 
 .download {
     display: block;
-    width: 150px;
+    width: 160px;
     border-radius: 15px;
+    margin-bottom: .75em;
     background-color: var(--color-accent);
     color: var(--color-text-light);
     border: none;

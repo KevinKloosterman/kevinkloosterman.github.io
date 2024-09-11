@@ -11,14 +11,20 @@ function placeDataLayerListeners() {
     // hover_skill: when user hovers skill
     // -> handled in scripts.js hoverSkill function
 
-    // When user clicks download button
     document.querySelectorAll('a.download-cv').forEach(function(element) {
-        element.addEventListener('click', function(event) {
-            pushToDataLayer({
-                event: 'download_cv',
-                file_language: 'nl',
+        // Check if the listener has already been added
+        if (!element.dataset.listenerAdded) {
+            element.addEventListener('click', function(event) {
+                const fileLanguage = event.currentTarget.dataset.language;
+                pushToDataLayer({
+                    event: 'download_cv',
+                    file_language: fileLanguage,
+                });
             });
-        });
+    
+            // Mark the listener as added
+            element.dataset.listenerAdded = "true";
+        }
     });
 
     // When user clicks on a social media link

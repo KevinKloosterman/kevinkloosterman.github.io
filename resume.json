@@ -2,7 +2,7 @@
     "personal": {
         "first_name": "Kevin",
         "last_name": "Kloosterman",
-        "title": "Technical Web Analyst",
+        "title": "Data Analyst / Technical Web Analyst",
         "photo": "profile.jpeg",
         "quote": "",
         "introduction": "",
@@ -22,15 +22,48 @@
     },
     "experience": [
         {
+            "employer_id": "04",
+            "employer": "Digital Power",
+            "note": "",
+            "title": "Data Analyst",
+            "period": {
+                "start": "September 2024",
+                "end": "present"
+            },
+            "description": "In my current position, I primarily perform data visualization and analysis while advising clients on how to turn their data into actionable insights.",
+            "url": "https://digital-power.com/en/?utm_source=organic&utm_medium=referral",
+            "logo": "digital_power.png",
+            "relevant_skills": {
+                "fields": {
+                    "Data Analytics": "",
+                    "Data Visualization": ""
+                },
+                "tools": {
+                    "Google BigQuery": "",
+                    "Microsoft Power BI": "",
+                    "Google Analytics 4": "",
+                    "Google Looker Studio": "",
+                    "Google Cloud Console": "",
+                    "Google Tag Manager": "",
+                    "Google Apps Script": ""
+                },
+                "programming": {
+                    "Python": "",
+                    "JavaScript": "",
+                    "SQL": ""
+                }
+            }
+        },
+        {
             "employer_id": "03",
             "employer": "Netprofiler",
             "note": "Part of LevelUp Group",
             "title": "SEA & Data Consultant",
             "period": {
                 "start": "January 2023",
-                "end": "present"
+                "end": "August 2024"
             },
-            "description": "When I started at Netprofiler, I was responsible for both our clients paid search performance and their data collection. Due to my passion for data and analytics, this role shifted to a more data oriented one. While primarily being a Technical Web Analyst, I also put in a fair share of data engineering and visualization.",
+            "description": "When I started at Netprofiler, I was responsible for both our clients paid search performance and their data collection. Due to my passion for data and analytics, this role shifted to a more data oriented one. While primarily being a Technical Web Analyst, I also put in a fair share of data engineering and visualization. During my time here I also took on the role of project lead in Consent Mode v2 implementation. In this role, I managed the team and coordinated the project to ensure timely implementation for all of Netprofilers clients.",
             "url": "https://www.netprofiler.nl/?utm_source=organic&utm_medium=referral",
             "logo": "netprofiler_square.png",
             "relevant_skills": {
@@ -52,7 +85,8 @@
                 },
                 "programming": {
                     "Python": "",
-                    "JavaScript": ""
+                    "JavaScript": "",
+                    "SQL": ""
                 }
             }
         },
@@ -66,7 +100,7 @@
                 "end": "December 2022"
             },
             "description": "After my internship at Cadform, I continued working there. In my new role, I managed various marketing tools for both B2C and B2B clients. For example, I worked on data (collection, analysis, activation), advertising campaigns, CRO, SEO, and email marketing.",
-            "url": "https://www.cadform.nl/",
+            "url": "https://www.cadform.nl/?utm_source=organic&utm_medium=referral",
             "logo": "cadform.png",
             "relevant_skills": {
                 "fields": {
@@ -104,7 +138,7 @@
                 "end": "February 2021"
             },
             "description": "As an intern at Cadform, I carried out various tasks. I managed SEA campaigns and delved into CRO and data. I also did video editing in Premiere Pro.",
-            "url": "https://www.cadform.nl/",
+            "url": "https://www.cadform.nl/?utm_source=organic&utm_medium=referral",
             "logo": "cadform.png",
             "relevant_skills": {
                 "fields": {
@@ -124,14 +158,14 @@
         {
             "employer_id": "01",
             "employer": "NRC Live",
-            "note": "This department no longer exists.",
+            "note": "This department has been discontinued.",
             "title": "Intern",
             "period": {
                 "start": "November 2018",
                 "end": "February 2019"
             },
             "description": "During my internship at NRC Live, I focused on researching the target audience for various events.",
-            "url": "https://www.nrc.nl/",
+            "url": "https://www.nrc.nl/?utm_source=organic&utm_medium=referral",
             "logo": "nrc.png",
             "relevant_skills": {
                 "fields": {
@@ -152,7 +186,7 @@
             "institute": "Hogeschool van Amsterdam",
             "level": "HBO - Bachelor",
             "course": "Media, Information, and Communication",
-            "url": "https://www.hva.nl/opleidingen/creative-business",
+            "url": "https://www.hva.nl/opleidingen/creative-business?utm_source=organic&utm_medium=referral",
             "logo": "hva.png",
             "period": {
                 "start": "August 2017",
@@ -167,13 +201,13 @@
                     "title": "Neuromarketing",
                     "grade": "8/10",
                     "description": "Specialization in CRO to influence subconscious consumer decisions.",
-                    "url": "https://www.kiesopmaat.nl/modules/hva/FBE/140228/"
+                    "url": "https://www.kiesopmaat.nl/modules/hva/FBE/140228?utm_source=organic&utm_medium=referral"
                 },
                 {
                     "title": "Digital Marketing",
                     "grade": "7/10",
                     "description": "Specialization in marketing strategy, social media, and SEO.",
-                    "url": "https://www.kiesopmaat.nl/modules/hva/FBE/140222/"
+                    "url": "https://www.kiesopmaat.nl/modules/hva/FBE/140222?utm_source=organic&utm_medium=referral"
                 }
             ]
         }
@@ -186,7 +220,7 @@
             "French": 53,
             "Spanish": 53,
             "German": 39,
-            "Japanese": 8
+            "Japanese": 9
         },
         "tools": [
             {
