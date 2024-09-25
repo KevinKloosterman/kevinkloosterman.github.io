@@ -9,7 +9,7 @@ function placeDataLayerListeners() {
     dataLayerInitiated = true;
 
     // hover_skill: when user hovers skill
-    // -> handled in scripts.js hoverSkill function
+    // -> handled in resume.js hoverSkill function
 
     document.querySelectorAll('a.download-cv').forEach(function(element) {
         // Check if the listener has already been added

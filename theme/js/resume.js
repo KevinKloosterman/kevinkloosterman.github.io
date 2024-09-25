@@ -1,6 +1,9 @@
 // Let global variables
 let resumeData;
 
+let hoverStartTime = null;
+let hoverTimeout = null;
+
 // Function to show tooltip
 function hoverSkill(event, skill) {
     const tooltip = document.getElementById('tooltip');
@@ -17,7 +20,7 @@ function hoverSkill(event, skill) {
     const skill_level_hue = calculateLvlHue(skill.level) || "white";
     tooltip_level.style.color = 'hsl(' + skill_level_hue + ', 90%, 35%)';
     tooltip_level.innerText = skill.level || '404';
-    
+
     tooltip_level_box.appendChild(tooltip_level);
 
     // Create description element
@@ -35,26 +38,42 @@ function hoverSkill(event, skill) {
     tooltip.style.top = event.pageY + 10 + 'px';
     tooltip.style.opacity = 1;
 
-    var skill_group;
-    if ("tool" in skill) {
-        skill_group = 'tool';
-    } else if ("language" in skill) {
-        skill_group = 'programming';
-    } else {
-        skill_group = 'other';
-    }
-
-    pushToDataLayer({
-        event: 'hover_skill',
-        skill_group: skill_group,
-        skill: skill.tool || skill.language || 'other'
-    });
+    // Start hover timer
+    hoverStartTime = new Date();  // Capture when the hover starts
 }
 
 // Function to hide tooltip
-function hideTooltip() {
+function hideTooltip(skill) {
     const tooltip = document.getElementById('tooltip');
+    tooltip.style.display = 'none';
     tooltip.style.opacity = 0;
+
+    // Calculate hover duration
+    const hoverEndTime = new Date();
+    const hoverDuration = (hoverEndTime - hoverStartTime) / 1000;  // Hover duration in seconds
+
+    // Check if hover lasted at least 2 seconds before pushing to data layer
+    if (hoverDuration >= 1) {
+        var skill_group;
+        if ("tool" in skill) {
+            skill_group = 'tool';
+        } else if ("language" in skill) {
+            skill_group = 'programming';
+        } else {
+            skill_group = 'other';
+        }
+
+        // Push to data layer
+        pushToDataLayer({
+            event: 'hover_skill',
+            skill_group: skill_group,
+            skill: skill.tool || skill.language || 'other',
+            time_hovered: hoverDuration
+        });
+    }
+
+    // Reset hover start time
+    hoverStartTime = null;
 }
 
 // Function to calculate hue of skill levels
@@ -233,7 +252,7 @@ function buildResume() {
                 const skill_li = document.createElement('li');
                 skill_li.classList.add(...['list-inline-item', 'badge', 'skill-tools']);
                 skill_li.onmouseover = (event) => hoverSkill(event, skill);
-                skill_li.onmouseout = hideTooltip;
+                skill_li.onmouseout = () => hideTooltip(skill);
                 skill_li.innerText = skill.tool;
                 skills_ul.appendChild(skill_li);
             });
@@ -242,7 +261,7 @@ function buildResume() {
                 const skill_li = document.createElement('li');
                 skill_li.classList.add(...['list-inline-item', 'badge', 'skill-programming']);
                 skill_li.onmouseover = (event) => hoverSkill(event, skill);
-                skill_li.onmouseout = hideTooltip;
+                skill_li.onmouseout = () => hideTooltip(skill);
                 skill_li.innerText = skill.language;
                 skills_ul.appendChild(skill_li);
             });
